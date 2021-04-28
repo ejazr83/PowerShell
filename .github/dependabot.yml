@@ -1,0 +1,14 @@
+version: 2
+updates:
+- package-ecosystem: nuget
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: System.ServiceModel.Security
+    versions:
+    - 4.8.0
+  - dependency-name: System.Private.ServiceModel
+    versions:
+    - 4.8.0
